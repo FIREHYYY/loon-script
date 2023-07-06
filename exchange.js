@@ -5,7 +5,7 @@ const $ = API("exchange");
 const currencyNames = {
     CNY: ["人民币", "🇨🇳"],
     USD: ["美元", "🇺🇸"],
-    TRY: ["里拉", "tr"],
+    TRY: ["里拉", "🇹🇷"],
     //HKD: ["港币", "🇭🇰"],
     //JPY: ["日元", "🇯🇵"],
     //EUR: ["欧元", "🇪🇺"],
