@@ -6,3 +6,4 @@ script：
 https://raw.githubusercontent.com/Wfccsqk/loon-script/main/script.conf
 
 ### 油价脚本来源于 [getsomecat](https://github.com/getsomecat/Loon)大佬
+### EPIC脚本来源于 [Peng-YM](https://github.com/Peng-YM/QuanX/tree/master/Tasks)大佬
