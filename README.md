@@ -4,3 +4,5 @@
 
 script：
 https://raw.githubusercontent.com/Wfccsqk/loon-script/main/script.conf
+
+### 油价脚本来源于 [getsomecat](https://github.com/getsomecat/Loon)大佬
