@@ -3,6 +3,10 @@ let games = [
         id: 814380,
         name: "只狼：影逝二度",
     },
+    {
+        id: 431960,
+        name: "Wallpaper Engine",
+    },
 ];
 
 const $ = API("steam");
