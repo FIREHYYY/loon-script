@@ -1,76 +1,9 @@
-/*
-爱奇艺会员签到脚本
-
-更新时间: 2023/02/26
-脚本兼容: QuantumultX, Surge4, Loon, JsBox, Node.js
-电报频道: @NobyDa
-问题反馈: @NobyDa_bot
-
-获取Cookie说明：
-Safari浏览器打开 https://m.iqiyi.com/user.html 使用密码登录, 如通知成功获取cookie则可使用该脚本.
-获取Cookie后, 请将Cookie脚本禁用并移除主机名，以免产生不必要的MITM.
-脚本将在每天上午9:00执行, 您可以修改执行时间。
-
-如果使用Node.js, 需自行安装'request'模块. 例: npm install request -g
-
-Node.js环境变量相关：
-Cookie：IQIYI_COOKIE
-Debug调试：IQIYI_DEBUG
-Bark通知推送Key：BARK_PUSH
-Bark服务端(默认官方)：BARK_SERVER
-
-JsBox, Node.js用户获取Cookie说明：
-方法一手机：开启抓包, 网页登录 https://m.iqiyi.com/user.html 返回抓包APP搜索URL关键字 apis/user/info.action 复制请求头中的Cookie字段填入以下脚本变量或环境变量中即可
-
-方法二PC：网页登录 https://www.iqiyi.com 按F12控制台执行 console.log(document.cookie) 复制打印的Cookie填入以下脚本变量或环境变量中即可
-*/
-
-var cookie = 'P00002=%7B%22uid%22%3A%221458643381%22%2C%22pru%22%3A1458643381%2C%22user_name%22%3A%22134****7029%22%2C%22nickname%22%3A%22%5Cu7131%5Cu4e36hy%22%2C%22pnickname%22%3A%22%5Cu7131%5Cu4e36hy%22%2C%22type%22%3A11%2C%22email%22%3Anull%7D; H_RENEW_COUNT=1688789713575; P00001=4cQ1ECZnfxXUdKp1YN76kowkO8Wu5g2EB1ysYNBDGcSSWLIp9Ca8FN4XsdxkWi2dcd6c; P00003=1458643381; P00007=4cQ1ECZnfxXUdKp1YN76kowkO8Wu5g2EB1ysYNBDGcSSWLIp9Ca8FN4XsdxkWi2dcd6c; QC005=5d63a3ac2e142817e8253f8fc27149f1; QC007=https://www.bing.com/; QC008=1dad013a2da1e3779e9c3d8839af84e3; QCH001=0; __dfp=e05daf31e5b77a4e2585bc95bcb0f5e54020a7d7aa59380dc86c2955a976fcd79b@1689825886543@1688529887543; QC006=ae72529e4b567e056d9166729ff9c1b3; Hm_lvt_5df871ab99f94347b23ca224fc7d013f=1685669839; P00010=1458643381; P00PRU=1458643381; P01010=1685721600; __uuid=ac3dd733-8ab3-89b9-5640-eecc6104864c; P00004=.1685669840.c66136e788; H5_AB=d; '; //单引号内填入手动获取的Cookie
+var cookie = 'P00002=%7B%22uid%22%3A%221458643381%22%2C%22pru%22%3A1458643381%2C%22user_name%22%3A%22134****7029%22%2C%22nickname%22%3A%22%5Cu7131%5Cu4e36hy%22%2C%22pnickname%22%3A%22%5Cu7131%5Cu4e36hy%22%2C%22type%22%3A11%2C%22email%22%3Anull%7D; H_RENEW_COUNT=1688789713575; P00001=4cQ1ECZnfxXUdKp1YN76kowkO8Wu5g2EB1ysYNBDGcSSWLIp9Ca8FN4XsdxkWi2dcd6c; P00003=1458643381; P00007=4cQ1ECZnfxXUdKp1YN76kowkO8Wu5g2EB1ysYNBDGcSSWLIp9Ca8FN4XsdxkWi2dcd6c; QC005=5d63a3ac2e142817e8253f8fc27149f1; QC007=https://www.bing.com/; QC008=1dad013a2da1e3779e9c3d8839af84e3; QCH001=0; __dfp=e05daf31e5b77a4e2585bc95bcb0f5e54020a7d7aa59380dc86c2955a976fcd79b@1689825886543@1688529887543; QC006=ae72529e4b567e056d9166729ff9c1b3; Hm_lvt_5df871ab99f94347b23ca224fc7d013f=1685669839; P00010=1458643381; P00PRU=1458643381; P01010=1685721600; __uuid=ac3dd733-8ab3-89b9-5640-eecc6104864c; P00004=.1685669840.c66136e788; H5_AB=d; '; 
+//单引号内填入手动获取的Cookie
 
 var barkKey = ''; //Bark APP 通知推送Key
 
 var barkServer = ''; //Bark APP 通知服务端地址(默认官方)
-
-/*********************
-QuantumultX 远程脚本配置:
-**********************
-[task_local]
-# 爱奇艺会员签到
-0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-[rewrite_local]
-# 获取Cookie
-^https:\/\/passport\.iqiyi\.com\/apis\/user\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-[mitm]
-hostname= passport.iqiyi.com
-
-**********************
-Surge 4.2.0+ 脚本配置:
-**********************
-[Script]
-爱奇艺签到 = type=cron,cronexp=0 9 * * *,timeout=120,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-爱奇艺获取Cookie = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-[MITM]
-hostname= passport.iqiyi.com
-
-************************
-Loon 2.1.0+ 脚本配置:
-************************
-
-[Script]
-# 爱奇艺签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-# 获取Cookie
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
-
-[Mitm]
-hostname= passport.iqiyi.com
-
-*/
 
 var LogDetails = false; // 响应日志
 
