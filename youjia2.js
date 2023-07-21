@@ -1,5 +1,3 @@
-var region = "shanxi-3/xian";
-
 const loondq = $persistentStore.read("地区");
 
 if (loondq !== undefined) {
