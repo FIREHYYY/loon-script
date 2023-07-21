@@ -9,4 +9,4 @@
 
 [Script]
 
-cron "0 18 * * *" script-path=https://raw.githubusercontent.com/getsomecat/Loon/main/youjia2.js, tag=实时油价
+cron "0 18 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/youjia2.js, tag=实时油价
