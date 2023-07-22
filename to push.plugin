@@ -5,8 +5,10 @@
 #!homepage = 插件首页，可在插件页面进行跳转
 #!icon = https://raw.githubusercontent.com/Keywos/rule/main/tv/app/144px/yj.png
 #!input = 地区
+#!input = 地区2
 
 
 [Script]
-
-cron "0 18 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/youjia2.js, tag=实时油价
+cron "0 10 * * 5,6,7" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/epic.js, enable=false, tag=EPIC
+cron "0 18 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/youjia2.js, enable=false, tag=油价2
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/exchange.js, enable=false, tag=汇率
