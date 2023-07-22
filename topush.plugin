@@ -2,7 +2,7 @@
 #!desc = 插件详细功能描述
 #!author = 插件作者
 #!openUrl = 自定义链接
-#!homepage = 插件首页，可在插件页面进行跳转
+#!homepage = https://github.com/FIREHYYY/loon-script
 #!icon = https://github.com/FIREHYYY/loon-script/blob/25886431c946b9bad42ad8d286de5e435243d7b8/wallhaven-d6x77m.jpg
 #!input = 油价地区
 
