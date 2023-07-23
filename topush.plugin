@@ -1,6 +1,6 @@
-#!name = 插件名称
-#!desc = 插件详细功能描述
-#!author = 插件作者
+#!name = 聚合推送
+#!desc = 每日资讯推送通知
+#!author = FIREHYYY
 #!openUrl = 自定义链接
 #!homepage = https://github.com/FIREHYYY/loon-script
 #!icon = https://github.com/FIREHYYY/loon-script/blob/21f7c66df05cec35488d287fdb4057f1f6915355/MM.png
