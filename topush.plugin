@@ -1,7 +1,7 @@
 #!name=聚合推送📮
 #!desc=每日资讯推送通知
 #!author=FIREHYYY
-#!openUrl=自定义链接
+#!openUrl=
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 #!input=油价地区
