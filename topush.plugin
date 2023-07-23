@@ -1,10 +1,10 @@
-#!name = 💡🎊聚合推送🎊📮
-#!desc = 每日资讯推送通知
-#!author = FIREHYYY
-#!openUrl = 自定义链接
-#!homepage = https://github.com/FIREHYYY/loon-script
-#!icon = https://github.com/FIREHYYY/loon-script/blob/21f7c66df05cec35488d287fdb4057f1f6915355/MM.png
-#!input = 油价地区
+#!name=聚合推送📮
+#!desc=每日资讯推送通知
+#!author=FIREHYYY
+#!openUrl=自定义链接
+#!homepage=https://github.com/FIREHYYY/loon-script
+#!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
+#!input=油价地区
 
 
 [Script]
