@@ -8,4 +8,4 @@
 
 
 [Script]
-http-request "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/exchange.js, enable=true, tag=汇率
+http-request ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax url script-response-body https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, enable=true, tag=爱企查
