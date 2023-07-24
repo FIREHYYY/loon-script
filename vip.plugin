@@ -4,8 +4,9 @@
 #!openUrl=
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
-#!input=油价地区
-
 
 [Script]
 http-request ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax url script-response-body https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, enable=true, tag=爱企查
+
+[MITM]
+hostname = aiqicha.baidu.com
