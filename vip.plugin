@@ -6,7 +6,7 @@
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 
 [Script]
-http-request ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax url script-response-body https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, enable=true, tag=爱企查
+http-request ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, enable=true, tag=爱企查
 
 [MITM]
 hostname = aiqicha.baidu.com
