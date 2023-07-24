@@ -1,4 +1,4 @@
-const loondq = $persistentStore.read("地区");
+const loondq = $persistentStore.read("油价地区");
 
 if (loondq !== undefined) {
   region = loondq;
