@@ -4,13 +4,11 @@
 #!openUrl=
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
+#!input=爱奇艺Cookie
 
 [MITM]
 hostname = *.video.qq.com,passport.iqiyi.com
 
 [Script]
 
-cron "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/videoqq.js,  tag=腾讯视频
-http-request ^https:\/\/access.video.qq.com\/user\/auth_refresh script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/videoqq.cookie.js, tag=腾讯视频cookie
-cron "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aqiyi.js,  tag=爱奇艺
-http-request ^https:\/\/passport\.iqiyi\.com\/apis\/user\/ url script-request-header https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aqiyi.js, tag=爱奇艺cookie
+cron "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
