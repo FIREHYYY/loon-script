@@ -1,10 +1,6 @@
 const loondq = $persistentStore.read("爱奇艺Cookie");
 
-if (loondq !== undefined) {
-  region = loondq;
-}
-
-var cookie = '${region}'; 
+var cookie = '${loondq}'; 
 //单引号内填入手动获取的Cookie
 
 var barkKey = ''; //Bark APP 通知推送Key
