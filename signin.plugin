@@ -5,6 +5,14 @@
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 
-[Script]
 
-cron "0 10 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
+[Script]
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站每日等级任务
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站Cookie(APP)
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js.js, tag=B站Cookie(网页)
+cron "30 0 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
+
+[MITM]
+hostname = app.bilibili.com, m.bilibili.com
+
+
