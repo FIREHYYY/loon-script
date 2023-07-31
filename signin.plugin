@@ -4,10 +4,6 @@
 #!openUrl=
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
-#!input=爱奇艺Cookie
-
-[MITM]
-hostname = *.video.qq.com,passport.iqiyi.com
 
 [Script]
 
