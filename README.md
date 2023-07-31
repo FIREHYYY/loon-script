@@ -5,11 +5,11 @@
 script：
 https://raw.githubusercontent.com/FIREHYYY/loon-script/main/script.conf
 
-to Push：
-https://raw.githubusercontent.com/FIREHYYY/loon-script/main/topush.plugin
+[to Push一键导入](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/topush.plugin)
 
-to Push：
-https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/topush.plugin
+[VIP一键导入](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/vip.plugin)
+
+[Sign in一键导入](https://www.nsloon.com/openloon/import?plugin=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/signin.plugin)
 
 ### 油价脚本来源于 [getsomecat](https://github.com/getsomecat/Loon)大佬
 ### EPIC、汇率脚本来源于 [Peng-YM](https://github.com/Peng-YM/QuanX/tree/master/Tasks)大佬
