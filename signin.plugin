@@ -10,11 +10,11 @@
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站每日等级任务
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站Cookie(APP)
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站Cookie(网页)
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, tag=阿里云盘
+cron "31 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, tag=阿里云盘
 http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, requires-body=true, timeout=10, enabled=true, tag=阿里云盘token
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js,timeout=60,tag=什么值得买
+cron "32 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js,timeout=60,tag=什么值得买
 http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js,tag=什么值得买Cookie
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
+cron "33 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
 
 [MITM]
 hostname = user-api.smzdm.com,app.bilibili.com, m.bilibili.com,auth.aliyundrive.com
