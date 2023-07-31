@@ -13,3 +13,6 @@ https://raw.githubusercontent.com/FIREHYYY/loon-script/main/script.conf
 
 ### 油价脚本来源于 [getsomecat](https://github.com/getsomecat/Loon)大佬
 ### EPIC、汇率脚本来源于 [Peng-YM](https://github.com/Peng-YM/QuanX/tree/master/Tasks)大佬
+### 张大妈脚本来源于 [blackmatrix7](https://github.com/blackmatrix7)大佬
+### Bilibili脚本来源于 [ClydeTime](https://github.com/ClydeTime)大佬
+
