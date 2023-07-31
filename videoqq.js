@@ -1,7 +1,6 @@
 const chavy = init()
 const cookieName = '腾讯视频'
-const KEY_signcookie = '
-qq_domain_video_guid_verify=c3e131840b1ca24c; video_platform=2; video_platform=2; video_guid=c3e131840b1ca24c; pgv_info=ssid=s3071756404; pgv_pvid=8207364536; _qpsvr_localtk=0.10792030379939432; RK=HDmMQ+bMYS; ptcz=041819f4b87e0b884bef131e693788aa5fbc4cada8faa15d44a569c96299ee95; main_login=qq; vqq_access_token=8295E564D74F73F05DEE4FDB68ACC0A6; vqq_appid=101483052; vqq_openid=A4146B43FEE17F2BE91DBD9A76B11B33; vqq_vuserid=188242069; vqq_refresh_token=FFEA9741B15666015F4A244597F99A98; qq_nick=%E3%80%80%E3%80%80;'
+const KEY_signcookie = 'chavy_cookie_videoqq'
 const KEY_loginurl = 'chavy_auth_url_videoqq'
 const KEY_loginheader = 'chavy_auth_header_videoqq'
 const KEY_mh5signurl = 'chavy_msign_url_videoqq'
