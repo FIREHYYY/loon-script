@@ -6,7 +6,7 @@
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 
 [MITM]
-*.video.qq.com
+hostname = *.video.qq.com
 
 [Script]
 
