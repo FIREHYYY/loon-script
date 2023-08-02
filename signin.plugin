@@ -20,7 +20,7 @@ cron "25 15 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-s
 http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,requires-body=1,tag=建行生活Cookie
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,tag = 建行生活
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=newUserInfo tag=京东 WSKEY, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js,requires-body=1
-http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query url script-request-headers https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js,tag=i茅台
+http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js,tag=i茅台
 
 
 [MITM]
