@@ -7,3 +7,6 @@
 
 [General]
 skip-proxy = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com,yaoyao.cebbank.com
+
+[MITM]
+hostname = yaoyao.cebbank.com
