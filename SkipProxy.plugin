@@ -1,0 +1,9 @@
+#!name=SkipProxy👓
+#!desc=跳过代理检测，重启Loon生效
+#!author=FIREHYYY
+#!openUrl=
+#!homepage=https://github.com/FIREHYYY/loon-script
+#!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
+
+[General]
+skip-proxy = www.baidu.com,yunbusiness.ccb.com,wxh.wo.cn,gate.lagou.com,www.abchina.com.cn,www.shanbay.com,login-service.mobile-bank.psbc.com,mobile-bank.psbc.com
