@@ -5,11 +5,15 @@
 #!homepage=https://github.com/FIREHYYY/loon-script
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 
+//enabled=true  是否启用（false关闭）
+/*
+*requires-body=true  需要主体
+*/
 
 [Script]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站Cookie(APP)
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站Cookie(网页)
-http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, requires-body=true, timeout=10, enabled=true, tag=阿里云盘token
+http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, requires-body=true, timeout=10, tag=阿里云盘token
 http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js,tag=什么值得买Cookie
 http-request ^https:\/\/(m|api)\.bilibili\.com\/(x\/v\d\/history\/shadow|service-worker).* script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=10, tag=bilibiliCoinsCookie
 http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,requires-body=1,tag=建行生活Cookie
