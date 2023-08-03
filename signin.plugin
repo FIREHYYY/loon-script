@@ -7,9 +7,9 @@
 
 
 [Script]
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=B站每日等级任务
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, tag=bilibili
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aliyundrive.js, tag=阿里云盘
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js,timeout=60,tag=什么值得买
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,  tag=爱奇艺
-cron "25 15 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js,tag=bilibiliCoins
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js,tag=bilibiliCoins
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,tag = 建行生活
