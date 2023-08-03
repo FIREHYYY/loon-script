@@ -53,7 +53,6 @@ bilibiliCoins = type=cron,cronexp="25 15 * * *",script-path=https://raw.githubus
 [task_local]
 25 15 * * * bilibiliCoins.js, enabled=true
 ####################
-*/
 
 const $ = Env("💰bilibiliCoins");
 
@@ -115,6 +114,99 @@ function get_cookie() {
         $.msg($.name, "❓写入Cookie失败", error, $.opts)
     }
 }
+*/
+
+const format = (ts, fmt = 'yyyy-MM-dd HH:mm:ss') => {
+	return $.time(fmt, ts);
+}
+
+const check = (key) =>
+	!config.hasOwnProperty(key) ||
+	!config[key].hasOwnProperty("time") ||
+	!(config[key]["num"] > 0) ||
+	format(new Date().toDateString()) > config[key].time;
+
+const cookie2object = (cookie) => {
+	var obj = {};
+	var arr = cookie.split("; ");
+	arr.forEach(function (val) {
+		var brr = val.split("=");
+		obj[brr[0]] = brr[1];
+	});
+	return obj;
+}
+
+const setCookieToLocalStore = (config, times) => {
+	if (config.cookie.DedeUserID) {
+		var url = $request.url
+		config.key = url.match(/.*access_key=(.*?)&build/)?.[1]
+		config.cookieStr = `DedeUserID=${config.cookie.DedeUserID}; DedeUserID__ckMd5=${config.cookie.DedeUserID__ckMd5}; SESSDATA=${config.cookie.SESSDATA}; bili_jct=${config.cookie.bili_jct}; sid=${config.cookie.sid}`
+		if (times === 1) {
+			$.setdata($.toStr(config), $.name + "_daily_bonus")
+				? $.msg($.name, "首次获取cookie", "🎉获取 cookie 成功")
+				: $.msg($.name, "首次获取cookie", "🤒获取 cookie 失败")
+		} else {
+			$.setdata($.toStr(config), $.name + "_daily_bonus")
+				? $.msg($.name, "检测到cookie已更新", "🎉更新 cookie 成功")
+				: $.msg($.name, "检测到cookie已更新", "🤒更新 cookie 失败")
+		}
+	} else {
+		$.msg($.name, "- 尚未登录, 请登录后重新获取cookie")
+	}
+}
+
+const $ = new Env("bilibili")
+const startTime = format()
+let config = {
+	cookie: {},
+	cookieStr: "",
+	key: "",
+	user: {},
+	watch: {},
+	share: {},
+	coins: {},
+	score: {}
+}
+let cards = []
+let real_times //实际需要投币次数
+
+!(async () => {
+	if (typeof $request != "undefined") {
+		$.log("- 正在获取cookie, 请稍后")
+		getCookie()
+	} else {
+		await signBiliBili()
+	}
+})()
+	.catch((e) => $.logErr(e))
+	.finally(() => $.done())
+
+function getCookie() {
+	if ('object' == typeof $request) {
+		let Cookie
+		if (typeof $request.headers.cookie != 'undefined') {
+			Cookie = $request.headers.cookie
+		} else if (typeof $request.headers.Cookie != 'undefined') {
+			Cookie = $request.headers.Cookie
+		}
+		if (Boolean(Cookie)) {
+			config.cookie = cookie2object(Cookie)
+			original_config = $.getjson($.name + "_daily_bonus", {})
+			if (Boolean(original_config.cookie)) {
+				if (original_config.cookie.bili_jct === config.cookie.bili_jct) {
+					$.log("- cookie未失效,无需更新")
+				} else {
+					setCookieToLocalStore(config, 2)
+				}
+			} else {
+				setCookieToLocalStore(config, 1)
+			}
+		} else {
+			$.msg($.name, "- 尚未登录, 请登录后重新获取cookie")
+		}
+	}
+}
+
 
 function getCoins(cookie) {
     return new Promise((resolve, reject) => {
