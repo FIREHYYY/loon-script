@@ -5,8 +5,8 @@
 #!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
 
 [Script]
-http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/spotify-json.js, timeout=10, tag=spotifyJson
-http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10, tag=spotifyProto
+http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/spotify-json.js, timeout=10,enable=false, tag=spotifyJson
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/spotify-proto.js, requires-body=true, binary-body-mode=true, timeout=10,enable=false, tag=spotifyProto
 http-response ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, requires-body=true, timeout=10, tag=aiqicha.js
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/Wechat.js
 
