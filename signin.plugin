@@ -21,8 +21,6 @@ http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,tag = 建行生活
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=newUserInfo tag=京东 WSKEY, script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js,requires-body=1
 http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js,tag=i茅台
-http-request ^https:\/\/(m|api)\.bilibili\.com\/(x\/v\d\/history\/shadow|service-worker).* script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins1.js, timeout=10, tag=bilibiliCoinsCookie
-cron "25 15 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins1.js,tag=bilibiliCoins
 
 [MITM]
 hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn
