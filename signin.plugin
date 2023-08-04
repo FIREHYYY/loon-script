@@ -10,6 +10,6 @@
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, timeout=60, tag=阿里云盘
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/smzdm.js, timeout=60, tag=什么值得买
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,timeout=60,tag=爱奇艺
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibili.js, timeout=60, tag=bilibili
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=60, tag=bilibili
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=60, enable=false, tag=bilibiliCoins
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js, timeout=60, tag=建行生活
