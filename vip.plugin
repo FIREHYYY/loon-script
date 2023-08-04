@@ -12,4 +12,4 @@ http-response ^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v\d\/(get
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/Wechat.js, tag=公众号去广
 
 [MITM]
-hostname = spclient.wg.spotify.com,aiqicha.baidu.com,mp.weixin.qq.com
+hostname = spclient.wg.spotify.com,aiqicha.baidu.com,mp.weixin.qq.com,xluser-ssl.xunlei.com
