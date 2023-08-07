@@ -22,7 +22,7 @@ http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=newUserInfo
 http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js,tag=i茅台
 http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,tag=Bing
 http-request ^https:\/\/miniapp\.yaduo\.com\/atourlife\/signIn\/signIn.+ script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/adjd.js, timeout=10, tag=亚朵酒店
-http-request ^https:\/\/m5\.amap\.com\/ws\/alice\/activity\/daily_sign\/do_sign? script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/GDTu.js, tag=高德地图
+http-request ^https://m5.amap.com/ws/alice/activity/daily_sign/do_sign? script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/GDTu.js, tag=高德地图
 
 [MITM]
 hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,m5.amap.com
