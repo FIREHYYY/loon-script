@@ -14,3 +14,4 @@ cron "30 7 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBi
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=60, enable=false, tag=bilibiliCoins
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js, timeout=60, tag=建行生活
 cron "30 7 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js, timeout=60, tag=Bing
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/adjd.js, timeout=300, tag=亚朵酒店app
