@@ -17,10 +17,10 @@ http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercont
 http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, tag=阿里云盘token
 http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, tag=什么值得买Cookie
 http-request ^https:\/\/(m|api)\.bilibili\.com\/(x\/v\d\/history\/shadow|service-worker).* script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=10, tag=bilibiliCoinsCookie
-http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,requires-body=1,tag=建行生活Cookie
-http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=newUserInfo  script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js,requires-body=1,tag=京东WSKEY
-http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js,tag=i茅台
-http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,tag=Bing
+http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,requires-body=1, tag=建行生活Cookie
+http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=newUserInfo  script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_jd_wskey.js, requires-body=1, tag=京东WSKEY
+http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRead\/query script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/get_maotai_token.js, enabled=false, tag=i茅台
+http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js, tag=Bing
 http-request ^https:\/\/miniapp\.yaduo\.com\/atourlife\/signIn\/signIn.+ script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/adjd.js, timeout=10, tag=亚朵酒店
 http-request ^https:\/\/m5\.amap\.com\/ws\/alice\/activity\/daily_sign\/do_sign script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/GDTu.js, tag=高德地图
 
