@@ -23,8 +23,9 @@ http-request ^https:\/\/app\.moutai519\.com\.cn\/xhr\/front\/mall\/message\/unRe
 http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js, tag=Bing
 http-request ^https:\/\/miniapp\.yaduo\.com\/atourlife\/signIn\/signIn.+ script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/adjd.js, timeout=10, tag=亚朵酒店
 http-response ^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, tag=高德地图
-http-request ^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn script-path=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js, requires-body=true, img-url=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png, tag=霸王茶姬token
+http-request ^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn script-path=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj_token.js, requires-body=true, tag=霸王茶姬token
 http-response ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/ty.cookie.js, tag=天翼云盘
+http-request ^https?:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, tag=途虎养车
 
 [MITM]
 hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn
