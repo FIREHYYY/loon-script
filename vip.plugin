@@ -10,13 +10,7 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|u
 http-response ^https://notability.com/subscriptions requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js, enable=false, tag=notability
 http-response ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, requires-body=true, timeout=10, tag=爱企查
 http-response ^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v\d\/(getuserinfo|loginkey) script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/xunlei.js, enable=false, timeout=10, tag=迅雷
-http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/Wechat.js, tag=公众号去广
-http-response ^https?:\/\/api.coolapk.com\/v6\/main\/init script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, tag=酷安去广
-http-response ^https?:\/\/api.coolapk.com\/v6\/dataList script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, tag=酷安去广
-http-response ^https?:\/\/api.coolapk.com\/v6\/main\/indexV8  script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, tag=酷安去广
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/replyList  script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, tag=酷安去广
-http-response ^https?:\/\/api.coolapk.com\/v6\/feed\/detail  script-path=https://github.com/ddgksf2013/Scripts/raw/master/coolapk.js, tag=酷安去广
 http-response ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
 
 [MITM]
-hostname = spclient.wg.spotify.com,notability.com,aiqicha.baidu.com,mp.weixin.qq.com,xluser-ssl.xunlei.com,api.coolapk.com
+hostname = spclient.wg.spotify.com,notability.com,aiqicha.baidu.com,xluser-ssl.xunlei.com
