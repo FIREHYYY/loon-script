@@ -10,11 +10,8 @@ http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|u
 http-response ^https://notability.com/subscriptions requires-body=1,script-path=https://raw.githubusercontent.com/litieyin/AD_VIP/main/Script/notability.js, enable=false, tag=notability
 http-response ^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/aiqicha.js, requires-body=true, timeout=10, tag=爱企查
 http-response ^https:\/\/xluser-ssl\.xunlei\.com\/xluser\.core\.login\/v\d\/(getuserinfo|loginkey) script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/xunlei.js, enable=false, timeout=10, tag=迅雷
-http-response ^https?:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch url reject-dict
-http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js
-http-response ^https:\/\/api\.gotokeep\.com requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js
-http-response https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/612.js
-http-response https://xluser-ssl.xunlei.com/xluser.core.login/v3/getuserinfo script-path=https://raw.githubusercontent.com/Marol62926/MarScrpt/main/xunlei.js,requires-body=1,max-size=0
-
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/baidulibrary.js，tag=百度文库
+http-response ^https:\/\/api\.gotokeep\.com requires-body=1,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/keep.js，tag=Keep
+http-response https://user-kaji-api.b612kaji.com/v1/purchase/subscription/subscriber/status requires-body=1,script-path=https://github.com/deezertidal/private/raw/master/js-backup/Crack/612.js,tag=B612相机
 [MITM]
 hostname = spclient.wg.spotify.com,notability.com,aiqicha.baidu.com,xluser-ssl.xunlei.com,appwk.baidu.com,api.gotokeep.com,user-kaji-api.b612kaji.com,xluser-ssl.xunlei.com
