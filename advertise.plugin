@@ -921,7 +921,6 @@ http:\/\/analytics\.163\.com\/ntes reject
 ^https?:\/\/a\.qiumibao\.com\/activities\/config\.php reject
 ^https?:\/\/\w+\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ reject
 ^https?:\/\/\w+\.gdt\.qq\.com reject
-^https?:\/\/\w+\.beacon\.qq\.com reject
 ^https?:\/\/\w+?\.kingsoft-office-service\.com\/ad reject-200
 ^https?:\/\/[a-z]*\.rsscc\.com\/[a-z]*\/adver reject
 ^https?:\/\/[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+){1,3}:\d+\/api\/v\d\/advert reject
