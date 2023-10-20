@@ -14,7 +14,7 @@
 [Script]
 http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/domain\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(APP)
 http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=B站Cookie(网页)
-http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, tag=阿里云盘token
+http-request ^https:\/\/(auth|aliyundrive)\.alipan\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, enabled=true, tag=阿里网盘token
 http-request ^https?:\/\/user-api\.smzdm\.com\/checkin$ script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, tag=什么值得买Cookie
 http-request ^https:\/\/(m|api)\.bilibili\.com\/(x\/v\d\/history\/shadow|service-worker).* script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=10, tag=bilibiliCoinsCookie
 http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js,requires-body=1, tag=建行生活Cookie
@@ -27,6 +27,11 @@ http-request ^https?:\/\/webapi\.qmai\.cn\/web\/catering\/integral\/sign\/signIn
 http-response ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/ty.cookie.js, tag=天翼云盘
 http-request ^https?:\/\/api\.tuhu\.cn\/User\/GetInternalCenterInfo script-path=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, tag=途虎养车
 
+[Script]
+http-request ^https:\/\/auth\.aliyundrive\.com\/v2\/account\/token script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, requires-body=true, timeout=10, enabled=false, tag=阿里网盘token获取
+
 [MITM]
-hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn
+hostname = auth.aliyundrive.com
+[MITM]
+hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.alipan.com, auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn
 
