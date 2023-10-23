@@ -9,12 +9,9 @@
 [Script]
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, timeout=60, tag=阿里云盘
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js,timeout=60, tag=什么值得买
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/iqiyi.js,timeout=60,tag=爱奇艺
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=60, tag=bilibili
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/bilibiliCoins.js, timeout=60, enable=false, tag=bilibiliCoins
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/jhsh.js, timeout=60, tag=建行生活
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js, tag=Bing积分
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/master/Study/adjd.js, timeout=300, tag=亚朵酒店
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, tag=高德地图
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.js, timeout=10, tag=霸王茶姬签到
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/ty.js, tag=天翼云盘
