@@ -25,8 +25,8 @@ cron "30 12 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/m
 http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1, tag=建行生活Cookie
 
 #Bing积分
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=false,  tag=Bing积分
-http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=false,  tag=Bing积分
+cron "30 12 * * *" script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=true,  tag=Bing积分
+http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=true,  tag=Bing积分
 
 #高德地图
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, tag=高德地图
