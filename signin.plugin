@@ -25,10 +25,10 @@ cron "30 12 * * *" script-path=https://raw.githubusercontent.com/FoKit/Scripts/m
 http-request ^https:\/\/yunbusiness\.ccb\.com\/clp_coupon\/txCtrl\?txcode=A3341A040 script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js,requires-body=1, tag=建行生活Cookie
 
 # Bing积分
-cron "30 12 * * *" script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=true,  tag=Bing积分
-http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/mw418/Loon/main/script/bingPoint.js,enabled=true,  tag=Bing积分
+cron "30 12 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,enabled=true,  tag=Bing积分
+http-request ^https:\/\/rewards\.bing\.com script-path=https://raw.githubusercontent.com/lowking/Scripts/master/bing/bingPoint.js,enabled=true,  tag=Bing积分
 
-# 德地图
+# 高德地图
 cron "30 12 * * *" script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, tag=高德地图
 http-response ^https:\/\/m5(-zb)?\.amap\.com\/ws\/yuece\/(act|openapi)\/(activity\/current\/)?query script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, requires-body=true, tag=高德地图
 
@@ -44,10 +44,14 @@ http-response ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱签到
 http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱签到
 
-# hifini签到
-cron "0 9 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=hifini签到
-http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=hifini签到
+# HiFiNi签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=HiFiNi签到
+http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=HiFiNi签到
+
+# 朴朴签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/pupu/pupuCheckIn.js, tag=朴朴
+http-request https:\/\/cauth.pupuapi.com\/clientauth\/user\/verify_login script-path=https://raw.githubusercontent.com/lowking/Scripts/master/pupu/pupuCheckIn.js, tag=朴朴
 
 
 [MITM]
-hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.alipan.com, auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn,www.52pojie.cn,*.hifini.com
+hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.alipan.com, auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn,www.52pojie.cn,*.hifini.com,cauth.pupuapi.com
