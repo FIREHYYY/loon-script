@@ -44,8 +44,10 @@ http-response ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path
 cron "0 9 * * *" script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱签到
 http-request https:\/\/www\.52pojie\.cn\/home\.php\? script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js, tag=吾爱签到
 
+# hifini签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=hifini签到
+http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=hifini签到
+
 
 [MITM]
-hostname = auth.aliyundrive.com
-[MITM]
-hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.alipan.com, auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn,www.52pojie.cn
+hostname = user-api.smzdm.com,app.bilibili.com,m.bilibili.com,api.bilibili.com,auth.alipan.com, auth.aliyundrive.com,yunbusiness.ccb.com,api.m.jd.com,app.moutai519.com.cn,rewards.bing.com,miniapp.yaduo.com,*.amap.com,webapi.qmai.cn,api.cloud.189.cn,www.52pojie.cn,*.hifini.com
