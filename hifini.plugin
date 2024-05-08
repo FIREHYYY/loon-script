@@ -15,4 +15,4 @@ http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubuser
 
 
 [MITM]
-hostname = *.hifini.com
+hostname = %APPEND% *.hifini.com
