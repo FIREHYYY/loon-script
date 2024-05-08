@@ -1,0 +1,18 @@
+#!name=HiFiNi签到🌍
+#!desc=每日签到
+#!author=FIREHYYY
+#!openUrl=
+#!homepage=https://github.com/FIREHYYY/loon-script
+#!icon=https://raw.githubusercontent.com/FIREHYYY/loon-script/main/MM.png
+
+
+[Script]
+# HiFiNi签到
+cron "0 9 * * *" script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=HiFiNi签到
+http-request https:\/\/www.hifini.com\/my.htm script-path=https://raw.githubusercontent.com/lowking/Scripts/master/hifini/hifiniSign.js, tag=HiFiNi签到
+
+
+
+
+[MITM]
+hostname = *.hifini.com
